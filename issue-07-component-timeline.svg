@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="'PingFang TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif">
+  <defs>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+
+  <!-- 階段一 -->
+  <rect x="30" y="30" width="340" height="270" rx="14" fill="#f0f9ff" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="54" y="66" font-size="14" fill="#475569">階段一</text>
+  <text x="54" y="98" font-size="20" font-weight="700" fill="#0c4a6e">元件被建立</text>
+  <rect x="54" y="118" width="120" height="32" rx="16" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="114" y="140" font-size="15" font-weight="700" fill="#0c4a6e" text-anchor="middle">一次性</text>
+  <line x1="54" y1="176" x2="346" y2="176" stroke="#7dd3fc"/>
+  <text x="54" y="208" font-size="13" fill="#475569">適合放置</text>
+  <text x="54" y="240" font-size="16" font-weight="700" fill="#0c4a6e">初始化</text>
+  <text x="54" y="272" font-size="15" fill="#334155">從資料庫撈資料、設好預設值</text>
+
+  <!-- 階段二 -->
+  <rect x="430" y="30" width="340" height="270" rx="14" fill="#ffedd5" stroke="#ea580c" stroke-width="2.5"/>
+  <text x="454" y="66" font-size="14" fill="#475569">階段二</text>
+  <text x="454" y="98" font-size="20" font-weight="700" fill="#9a3412">畫面要更新</text>
+  <rect x="454" y="118" width="120" height="32" rx="16" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="514" y="140" font-size="15" font-weight="700" fill="#9a3412" text-anchor="middle">每次互動</text>
+  <line x1="454" y1="176" x2="746" y2="176" stroke="#fdba74"/>
+  <text x="454" y="208" font-size="13" fill="#475569">適合放置</text>
+  <text x="454" y="240" font-size="16" font-weight="700" fill="#9a3412">跟著互動更新的計算</text>
+  <text x="454" y="272" font-size="15" fill="#334155">與渲染結果有關，每次都重跑</text>
+
+  <!-- 階段三 -->
+  <rect x="830" y="30" width="340" height="270" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2.5"/>
+  <text x="854" y="66" font-size="14" fill="#475569">階段三</text>
+  <text x="854" y="98" font-size="20" font-weight="700" fill="#065f46">畫面真的畫出來</text>
+  <rect x="854" y="118" width="120" height="32" rx="16" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="914" y="140" font-size="15" font-weight="700" fill="#065f46" text-anchor="middle">純呈現</text>
+  <line x1="854" y1="176" x2="1146" y2="176" stroke="#6ee7b7"/>
+  <text x="854" y="208" font-size="13" fill="#475569">適合放置</text>
+  <text x="854" y="240" font-size="16" font-weight="700" fill="#065f46">只負責呈現</text>
+  <text x="854" y="272" font-size="15" fill="#334155">不該做會改變資料的事</text>
+
+  <!-- 階段之間的箭頭 -->
+  <line x1="376" y1="165" x2="424" y2="165" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <line x1="776" y1="165" x2="824" y2="165" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+
+  <!-- 時間軸 -->
+  <line x1="30" y1="324" x2="1170" y2="324" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrG)"/>
+  <circle cx="200" cy="324" r="5" fill="#0284c7"/>
+  <circle cx="600" cy="324" r="5" fill="#ea580c"/>
+  <circle cx="1000" cy="324" r="5" fill="#059669"/>
+  <text x="1160" y="346" font-size="14" fill="#475569" text-anchor="end">時間</text>
+
+  <!-- 陷阱標註 -->
+  <rect x="30" y="364" width="560" height="72" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="54" y="392" font-size="15" font-weight="700" fill="#92400e">一次性的事放進反覆執行的階段</text>
+  <text x="54" y="418" font-size="14" fill="#475569">會重複觸發，例如有副作用的新增紀錄</text>
+  <rect x="610" y="364" width="560" height="72" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="634" y="392" font-size="15" font-weight="700" fill="#92400e">初始化放進反覆執行的階段</text>
+  <text x="634" y="418" font-size="14" fill="#475569">會蓋掉使用者填的值，造成狀態遺失</text>
+
+  <!-- 圖說 -->
+  <text x="600" y="490" font-size="20" font-weight="700" fill="#1e293b" text-anchor="middle">回頭看一眼，這段程式碼現在待在哪個階段</text>
+</svg>

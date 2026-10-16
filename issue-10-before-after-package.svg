@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="'PingFang TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif">
+  <defs>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <rect x="30" y="30" width="540" height="404" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2.5"/>
+  <text x="54" y="66" font-size="14" fill="#475569">封裝前</text>
+  <text x="54" y="98" font-size="20" font-weight="700" fill="#9a3412">功能綁在單一專案</text>
+  <line x1="54" y1="120" x2="546" y2="120" stroke="#fdba74"/>
+  <rect x="54" y="148" width="140" height="128" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="124" y="176" font-size="15" font-weight="700" fill="#9a3412" text-anchor="middle">專案 A</text>
+  <rect x="70" y="192" width="108" height="60" rx="8" fill="#ffedd5" stroke="#fb923c"/>
+  <text x="124" y="218" font-size="16" font-weight="700" fill="#9a3412" text-anchor="middle">功能</text>
+  <text x="124" y="240" font-size="13" fill="#475569" text-anchor="middle">原始版本</text>
+  <line x1="198" y1="222" x2="226" y2="222" stroke="#475569" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrG)"/>
+  <rect x="230" y="148" width="140" height="128" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="300" y="176" font-size="15" font-weight="700" fill="#9a3412" text-anchor="middle">專案 B</text>
+  <rect x="246" y="192" width="108" height="60" rx="8" fill="#ffedd5" stroke="#fb923c"/>
+  <text x="300" y="218" font-size="16" font-weight="700" fill="#9a3412" text-anchor="middle">功能</text>
+  <text x="300" y="240" font-size="13" fill="#475569" text-anchor="middle">複製版本</text>
+  <line x1="374" y1="222" x2="402" y2="222" stroke="#475569" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrG)"/>
+  <rect x="406" y="148" width="140" height="128" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="476" y="176" font-size="15" font-weight="700" fill="#9a3412" text-anchor="middle">專案 C</text>
+  <rect x="422" y="192" width="108" height="60" rx="8" fill="#ffedd5" stroke="#fb923c"/>
+  <text x="476" y="218" font-size="16" font-weight="700" fill="#9a3412" text-anchor="middle">功能</text>
+  <text x="476" y="240" font-size="13" fill="#475569" text-anchor="middle">複製版本</text>
+  <text x="300" y="310" font-size="14" fill="#475569" text-anchor="middle">複製貼上，功能跟著專案各自存在</text>
+  <rect x="54" y="354" width="492" height="56" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="78" y="376" font-size="15" font-weight="700" fill="#92400e">要調整時，每個專案都得打開改一次</text>
+  <text x="78" y="397" font-size="14" fill="#475569">翻舊專案、複製程式碼、改命名空間</text>
+  <line x1="578" y1="232" x2="622" y2="232" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <text x="600" y="218" font-size="14" fill="#475569" text-anchor="middle">封裝</text>
+  <rect x="630" y="30" width="540" height="404" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2.5"/>
+  <text x="654" y="66" font-size="14" fill="#475569">封裝後</text>
+  <text x="654" y="98" font-size="20" font-weight="700" fill="#065f46">功能抽成套件，被多個專案安裝</text>
+  <line x1="654" y1="120" x2="1146" y2="120" stroke="#6ee7b7"/>
+  <rect x="654" y="140" width="492" height="98" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="678" y="166" font-size="16" font-weight="700" fill="#065f46">套件</text>
+  <rect x="678" y="184" width="84" height="34" rx="17" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="720" y="206" font-size="14" font-weight="700" fill="#065f46" text-anchor="middle">功能</text>
+  <rect x="778" y="184" width="160" height="34" rx="17" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="858" y="206" font-size="14" font-weight="700" fill="#065f46" text-anchor="middle">Service Provider</text>
+  <rect x="954" y="184" width="150" height="34" rx="17" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1029" y="206" font-size="14" font-weight="700" fill="#065f46" text-anchor="middle">可發布的設定檔</text>
+  <rect x="654" y="288" width="140" height="46" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="724" y="317" font-size="15" font-weight="700" fill="#065f46" text-anchor="middle">專案 A</text>
+  <line x1="724" y1="284" x2="724" y2="244" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <text x="734" y="270" font-size="13" fill="#475569">安裝</text>
+  <rect x="830" y="288" width="140" height="46" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="900" y="317" font-size="15" font-weight="700" fill="#065f46" text-anchor="middle">專案 B</text>
+  <line x1="900" y1="284" x2="900" y2="244" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <text x="910" y="270" font-size="13" fill="#475569">安裝</text>
+  <rect x="1006" y="288" width="140" height="46" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="1076" y="317" font-size="15" font-weight="700" fill="#065f46" text-anchor="middle">專案 C</text>
+  <line x1="1076" y1="284" x2="1076" y2="244" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <text x="1086" y="270" font-size="13" fill="#475569">安裝</text>
+  <rect x="654" y="354" width="492" height="56" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="678" y="376" font-size="15" font-weight="700" fill="#065f46">各專案安裝同一個套件</text>
+  <text x="678" y="397" font-size="14" fill="#475569">照自己的需求調整設定，不回頭改原始碼</text>
+  <text x="600" y="484" font-size="20" font-weight="700" fill="#1e293b" text-anchor="middle">封裝，是讓功能離開它出生的那個專案</text>
+</svg>

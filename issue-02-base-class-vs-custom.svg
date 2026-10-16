@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" font-family="'PingFang TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif">
+  <defs>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="1200" height="420" fill="#ffffff"/>
+
+  <!-- 左側：框架負責 -->
+  <rect x="30" y="30" width="760" height="310" rx="14" fill="#f0f9ff" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="54" y="66" font-size="14" fill="#475569">框架負責</text>
+  <text x="54" y="98" font-size="20" font-weight="700" fill="#0c4a6e">基底類別已經處理好的表單生命週期</text>
+
+  <rect x="54" y="130" width="160" height="150" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="70" y="162" font-size="14" fill="#475569">第一步</text>
+  <text x="70" y="194" font-size="18" font-weight="700" fill="#0c4a6e">資料填入</text>
+  <text x="70" y="228" font-size="14" fill="#334155">從資料庫撈出值</text>
+  <text x="70" y="252" font-size="14" fill="#334155">並顯示</text>
+
+  <rect x="238" y="130" width="160" height="150" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="254" y="162" font-size="14" fill="#475569">第二步</text>
+  <text x="254" y="194" font-size="18" font-weight="700" fill="#0c4a6e">狀態收集</text>
+  <text x="254" y="228" font-size="14" fill="#334155">收集使用者</text>
+  <text x="254" y="252" font-size="14" fill="#334155">填的值</text>
+
+  <rect x="422" y="130" width="160" height="150" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="438" y="162" font-size="14" fill="#475569">第三步</text>
+  <text x="438" y="194" font-size="18" font-weight="700" fill="#0c4a6e">驗證</text>
+  <text x="438" y="228" font-size="14" fill="#334155">送出前跑</text>
+  <text x="438" y="252" font-size="14" fill="#334155">驗證規則</text>
+
+  <rect x="606" y="130" width="160" height="150" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="622" y="162" font-size="14" fill="#475569">第四步</text>
+  <text x="622" y="194" font-size="18" font-weight="700" fill="#0c4a6e">寫回</text>
+  <text x="622" y="228" font-size="14" fill="#334155">送出後把值</text>
+  <text x="622" y="252" font-size="14" fill="#334155">寫回模型</text>
+
+  <line x1="216" y1="205" x2="236" y2="205" stroke="#475569" stroke-width="2" marker-end="url(#arrG)"/>
+  <line x1="400" y1="205" x2="420" y2="205" stroke="#475569" stroke-width="2" marker-end="url(#arrG)"/>
+  <line x1="584" y1="205" x2="604" y2="205" stroke="#475569" stroke-width="2" marker-end="url(#arrG)"/>
+
+  <!-- 中間加號 -->
+  <text x="810" y="196" font-size="32" font-weight="700" fill="#475569" text-anchor="middle">+</text>
+
+  <!-- 右側：你負責 -->
+  <rect x="830" y="30" width="340" height="310" rx="14" fill="#ffedd5" stroke="#ea580c" stroke-width="2.5"/>
+  <text x="854" y="66" font-size="14" fill="#475569">你負責</text>
+  <text x="854" y="98" font-size="20" font-weight="700" fill="#9a3412">自訂欄位獨有的一小塊</text>
+
+  <rect x="854" y="130" width="292" height="70" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="878" y="160" font-size="16" font-weight="700" fill="#9a3412">長什麼樣子</text>
+  <text x="878" y="184" font-size="14" fill="#334155">指定視圖，描述輸入框怎麼呈現</text>
+
+  <rect x="854" y="220" width="292" height="70" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="878" y="250" font-size="16" font-weight="700" fill="#9a3412">輸入時即時檢查格式</text>
+  <text x="878" y="274" font-size="14" fill="#334155">格式錯了馬上提示</text>
+
+  <!-- 圖說 -->
+  <text x="600" y="388" font-size="20" font-weight="700" fill="#1e293b" text-anchor="middle">框架處理大部分，你只補一小塊</text>
+</svg>

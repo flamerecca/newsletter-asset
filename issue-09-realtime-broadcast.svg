@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="'PingFang TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif">
+  <defs>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+
+  <!-- 第一段 -->
+  <rect x="30" y="30" width="340" height="270" rx="14" fill="#f0f9ff" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="54" y="66" font-size="14" fill="#475569">第一段</text>
+  <text x="54" y="98" font-size="20" font-weight="700" fill="#0c4a6e">後端觸發事件</text>
+  <rect x="54" y="118" width="120" height="32" rx="16" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="114" y="140" font-size="15" font-weight="700" fill="#0c4a6e" text-anchor="middle">資料變化時</text>
+  <line x1="54" y1="176" x2="346" y2="176" stroke="#7dd3fc"/>
+  <text x="54" y="208" font-size="13" fill="#475569">發生的事</text>
+  <text x="54" y="240" font-size="16" font-weight="700" fill="#0c4a6e">B 把訂單標成已出貨</text>
+  <text x="54" y="272" font-size="15" fill="#334155">存檔成功後包成事件，丟出去</text>
+
+  <!-- 第二段 -->
+  <rect x="430" y="30" width="340" height="270" rx="14" fill="#ffedd5" stroke="#ea580c" stroke-width="2.5"/>
+  <text x="454" y="66" font-size="14" fill="#475569">第二段</text>
+  <text x="454" y="98" font-size="20" font-weight="700" fill="#9a3412">廣播頻道路由</text>
+  <rect x="454" y="118" width="120" height="32" rx="16" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="514" y="140" font-size="15" font-weight="700" fill="#9a3412" text-anchor="middle">決定送給誰</text>
+  <line x1="454" y1="176" x2="746" y2="176" stroke="#fdba74"/>
+  <text x="454" y="208" font-size="13" fill="#475569">像廣播電台</text>
+  <text x="454" y="240" font-size="16" font-weight="700" fill="#9a3412">事件是節目，頻道是頻率</text>
+  <text x="454" y="272" font-size="15" fill="#334155">只有調到頻率的人收得到</text>
+
+  <!-- 第三段 -->
+  <rect x="830" y="30" width="340" height="270" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2.5"/>
+  <text x="854" y="66" font-size="14" fill="#475569">第三段</text>
+  <text x="854" y="98" font-size="20" font-weight="700" fill="#065f46">前端訂閱接收</text>
+  <rect x="854" y="118" width="120" height="32" rx="16" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="914" y="140" font-size="15" font-weight="700" fill="#065f46" text-anchor="middle">A 的瀏覽器</text>
+  <line x1="854" y1="176" x2="1146" y2="176" stroke="#6ee7b7"/>
+  <text x="854" y="208" font-size="13" fill="#475569">先訂閱頻道</text>
+  <text x="854" y="240" font-size="16" font-weight="700" fill="#065f46">Filament 元件轉成畫面狀態</text>
+  <text x="854" y="272" font-size="15" fill="#334155">待處理 自動變成 已出貨</text>
+
+  <!-- 段落之間的箭頭 -->
+  <line x1="376" y1="165" x2="424" y2="165" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <line x1="776" y1="165" x2="824" y2="165" stroke="#475569" stroke-width="2.5" marker-end="url(#arrG)"/>
+
+  <!-- 歸屬標示 -->
+  <line x1="30" y1="324" x2="770" y2="324" stroke="#0284c7" stroke-width="4" stroke-linecap="round"/>
+  <line x1="830" y1="324" x2="1170" y2="324" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="356" font-size="16" font-weight="700" fill="#0c4a6e" text-anchor="middle">Laravel 原生機制：事件、佇列、廣播</text>
+  <text x="1000" y="356" font-size="16" font-weight="700" fill="#065f46" text-anchor="middle">Filament 橋接</text>
+
+  <!-- 補充標註 -->
+  <rect x="30" y="384" width="740" height="56" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="54" y="418" font-size="15" fill="#92400e">訊息怎麼送出、怎麼送進來，都不歸 Filament 管</text>
+  <rect x="830" y="384" width="340" height="56" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="854" y="418" font-size="15" fill="#92400e">Filament 只負責接住訊息</text>
+
+  <!-- 圖說 -->
+  <text x="600" y="490" font-size="20" font-weight="700" fill="#1e293b" text-anchor="middle">資料自己跳出來，背後只有三段，而且第一次站到 Filament 主場之外</text>
+</svg>
