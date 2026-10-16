@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="'PingFang TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="78" y="40" font-size="14" font-weight="700" fill="#475569">層級</text>
+  <text x="324" y="40" font-size="14" font-weight="700" fill="#475569">改動範圍</text>
+  <text x="604" y="40" font-size="14" font-weight="700" fill="#475569">常聽到的需求說法</text>
+  <text x="904" y="40" font-size="14" font-weight="700" fill="#475569">代價高低</text>
+  <rect x="54" y="56" width="1092" height="120" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="78" y="102" font-size="14" fill="#475569">第一層</text>
+  <text x="78" y="138" font-size="24" font-weight="700" fill="#0c4a6e">樣板微調</text>
+  <line x1="290" y1="72" x2="290" y2="160" stroke="#0284c7" stroke-opacity="0.4"/>
+  <line x1="580" y1="72" x2="580" y2="160" stroke="#0284c7" stroke-opacity="0.4"/>
+  <line x1="880" y1="72" x2="880" y2="160" stroke="#0284c7" stroke-opacity="0.4"/>
+  <text x="324" y="94" font-size="16" font-weight="700" fill="#0c4a6e">表層視覺</text>
+  <text x="324" y="122" font-size="14" fill="#475569">顏色、字體、間距</text>
+  <text x="324" y="148" font-size="14" fill="#475569">不動框架底層結構</text>
+  <text x="604" y="94" font-size="14" fill="#1e293b">「換個顏色」</text>
+  <text x="604" y="122" font-size="14" fill="#1e293b">「字體大一點」</text>
+  <text x="604" y="150" font-size="14" fill="#1e293b">「間距抓緊一點」</text>
+  <text x="904" y="98" font-size="18" font-weight="700" fill="#0c4a6e">代價低</text>
+  <rect x="904" y="118" width="218" height="22" rx="11" fill="#ffffff" stroke="#0284c7" stroke-opacity="0.5"/>
+  <rect x="904" y="118" width="73" height="22" rx="11" fill="#7dd3fc"/>
+  <rect x="54" y="196" width="1092" height="120" rx="12" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="78" y="242" font-size="14" fill="#475569">第二層</text>
+  <text x="78" y="278" font-size="24" font-weight="700" fill="#9a3412">主題設定</text>
+  <line x1="290" y1="212" x2="290" y2="300" stroke="#fb923c" stroke-opacity="0.4"/>
+  <line x1="580" y1="212" x2="580" y2="300" stroke="#fb923c" stroke-opacity="0.4"/>
+  <line x1="880" y1="212" x2="880" y2="300" stroke="#fb923c" stroke-opacity="0.4"/>
+  <text x="324" y="234" font-size="16" font-weight="700" fill="#9a3412">整體視覺風格</text>
+  <text x="324" y="262" font-size="14" fill="#475569">仍在框架主題機制範圍內</text>
+  <text x="324" y="288" font-size="14" fill="#475569">系統性樣式設定</text>
+  <text x="604" y="234" font-size="14" fill="#1e293b">「整個後台的質感要跟我們官網一致」</text>
+  <text x="604" y="262" font-size="14" fill="#1e293b">「要有我們品牌的識別感」</text>
+  <text x="904" y="238" font-size="18" font-weight="700" fill="#9a3412">代價中</text>
+  <rect x="904" y="258" width="218" height="22" rx="11" fill="#ffffff" stroke="#fb923c" stroke-opacity="0.5"/>
+  <rect x="904" y="258" width="146" height="22" rx="11" fill="#fdba74"/>
+  <rect x="54" y="336" width="1092" height="120" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/>
+  <text x="78" y="382" font-size="14" fill="#475569">第三層</text>
+  <text x="78" y="418" font-size="24" font-weight="700" fill="#9a3412">完全自訂佈局</text>
+  <line x1="290" y1="352" x2="290" y2="440" stroke="#ea580c" stroke-opacity="0.4"/>
+  <line x1="580" y1="352" x2="580" y2="440" stroke="#ea580c" stroke-opacity="0.4"/>
+  <line x1="880" y1="352" x2="880" y2="440" stroke="#ea580c" stroke-opacity="0.4"/>
+  <text x="324" y="374" font-size="16" font-weight="700" fill="#9a3412">版面配置與頁面結構</text>
+  <text x="324" y="402" font-size="14" fill="#475569">動到 Layout 本身</text>
+  <text x="324" y="428" font-size="14" fill="#475569">超出主題機制能調整的範圍</text>
+  <text x="604" y="374" font-size="14" fill="#1e293b">「Sidebar 的排列方式要不一樣」</text>
+  <text x="604" y="402" font-size="14" fill="#1e293b">「資訊架構照我們的方式呈現」</text>
+  <text x="904" y="378" font-size="18" font-weight="700" fill="#9a3412">代價高</text>
+  <rect x="904" y="398" width="218" height="22" rx="11" fill="#ffffff" stroke="#ea580c" stroke-opacity="0.5"/>
+  <rect x="904" y="398" width="218" height="22" rx="11" fill="#ea580c"/>
+  <text x="600" y="516" font-size="20" font-weight="700" fill="#1e293b" text-anchor="middle">三層之間沒有優劣，只有對應不對應</text>
+</svg>
