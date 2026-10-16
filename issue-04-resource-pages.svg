@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" font-family="'PingFang TC','Noto Sans CJK TC','Microsoft JhengHei',sans-serif">
+  <rect width="1200" height="500" fill="#ffffff"/>
+  <!-- 外框 Resource -->
+  <rect x="30" y="20" width="1140" height="356" rx="16" fill="#f8fafc" stroke="#475569" stroke-width="2.5"/>
+  <text x="54" y="64" font-size="20" font-weight="700" fill="#1e293b">Order Resource，整棟房子</text>
+
+  <!-- 預設頁面 1：列表 -->
+  <rect x="54" y="96" width="204" height="250" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="70" y="148" font-size="20" font-weight="700" fill="#0c4a6e">列表</text>
+  <text x="70" y="174" font-size="14" fill="#475569">List</text>
+  <line x1="70" y1="196" x2="242" y2="196" stroke="#7dd3fc"/>
+  <text x="70" y="224" font-size="13" fill="#475569">路由</text>
+  <text x="70" y="248" font-size="14" font-family="Menlo,monospace" fill="#0c4a6e">/orders</text>
+  <text x="70" y="286" font-size="13" fill="#475569">導覽入口</text>
+  <text x="70" y="310" font-size="14" fill="#0c4a6e">導覽選單</text>
+
+  <!-- 預設頁面 2：建立 -->
+  <rect x="276" y="96" width="204" height="250" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="292" y="148" font-size="20" font-weight="700" fill="#0c4a6e">建立</text>
+  <text x="292" y="174" font-size="14" fill="#475569">Create</text>
+  <line x1="292" y1="196" x2="464" y2="196" stroke="#7dd3fc"/>
+  <text x="292" y="224" font-size="13" fill="#475569">路由</text>
+  <text x="292" y="248" font-size="14" font-family="Menlo,monospace" fill="#0c4a6e">/orders/create</text>
+  <text x="292" y="286" font-size="13" fill="#475569">導覽入口</text>
+  <text x="292" y="310" font-size="14" fill="#0c4a6e">列表頁標頭按鈕</text>
+
+  <!-- 預設頁面 3：編輯 -->
+  <rect x="498" y="96" width="204" height="250" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="514" y="148" font-size="20" font-weight="700" fill="#0c4a6e">編輯</text>
+  <text x="514" y="174" font-size="14" fill="#475569">Edit</text>
+  <line x1="514" y1="196" x2="686" y2="196" stroke="#7dd3fc"/>
+  <text x="514" y="224" font-size="13" fill="#475569">路由</text>
+  <text x="514" y="248" font-size="14" font-family="Menlo,monospace" fill="#0c4a6e">/orders/{id}/edit</text>
+  <text x="514" y="286" font-size="13" fill="#475569">導覽入口</text>
+  <text x="514" y="310" font-size="14" fill="#0c4a6e">表格操作按鈕</text>
+
+  <!-- 預設頁面 4：檢視 -->
+  <rect x="720" y="96" width="204" height="250" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="736" y="148" font-size="20" font-weight="700" fill="#0c4a6e">檢視</text>
+  <text x="736" y="174" font-size="14" fill="#475569">View</text>
+  <line x1="736" y1="196" x2="908" y2="196" stroke="#7dd3fc"/>
+  <text x="736" y="224" font-size="13" fill="#475569">路由</text>
+  <text x="736" y="248" font-size="14" font-family="Menlo,monospace" fill="#0c4a6e">/orders/{id}</text>
+  <text x="736" y="286" font-size="13" fill="#475569">導覽入口</text>
+  <text x="736" y="310" font-size="14" fill="#0c4a6e">表格操作按鈕</text>
+
+  <!-- 自訂頁面：合併出貨單 -->
+  <rect x="942" y="96" width="204" height="250" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/>
+  <rect x="1078" y="110" width="52" height="24" rx="12" fill="#ea580c"/>
+  <text x="1104" y="127" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">新增</text>
+  <text x="958" y="148" font-size="20" font-weight="700" fill="#9a3412">合併出貨單</text>
+  <text x="958" y="174" font-size="14" fill="#475569">Custom Page</text>
+  <line x1="958" y1="196" x2="1130" y2="196" stroke="#fdba74"/>
+  <text x="958" y="224" font-size="13" fill="#475569">路由</text>
+  <text x="958" y="248" font-size="14" font-family="Menlo,monospace" fill="#9a3412">/orders/merge</text>
+  <text x="958" y="286" font-size="13" fill="#475569">導覽入口</text>
+  <text x="958" y="310" font-size="14" fill="#9a3412">導覽選單</text>
+
+  <!-- 圖說 -->
+  <text x="600" y="424" font-size="20" font-weight="700" fill="#1e293b" text-anchor="middle">四個預設房間照舊，自訂頁面只是多蓋一間</text>
+
+  <!-- 圖例 -->
+  <rect x="440" y="452" width="20" height="14" rx="3" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="470" y="464" font-size="14" fill="#475569">預設頁面</text>
+  <rect x="620" y="452" width="20" height="14" rx="3" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="650" y="464" font-size="14" fill="#475569">自訂頁面</text>
+</svg>
