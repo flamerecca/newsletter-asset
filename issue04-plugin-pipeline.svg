@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" font-family="PingFang TC, Noto Sans CJK TC, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#475569"/></marker>
+    <marker id="b" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#0f766e"/></marker>
+  </defs>
+  <rect width="900" height="360" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">請求穿過 Plugin 管線，再原路回來</text>
+  <g font-size="15" text-anchor="middle">
+    <rect x="30" y="130" width="90" height="60" rx="8" fill="#e2e8f0" stroke="#64748b"/>
+    <text x="75" y="166" fill="#0f172a">客戶端</text>
+    <rect x="170" y="110" width="150" height="100" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="245" y="150" fill="#0f172a" font-weight="700">Plugin 1</text>
+    <text x="245" y="176" fill="#334155">RequestTimer</text>
+    <rect x="370" y="110" width="150" height="100" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="445" y="150" fill="#0f172a" font-weight="700">Plugin 2</text>
+    <text x="445" y="176" fill="#334155">第二個 install</text>
+    <rect x="570" y="110" width="150" height="100" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="645" y="150" fill="#0f172a" font-weight="700">Plugin 3</text>
+    <text x="645" y="176" fill="#334155">第三個 install</text>
+    <rect x="770" y="110" width="100" height="100" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="820" y="155" fill="#0f172a" font-weight="700">路由</text>
+    <text x="820" y="178" fill="#334155">處理函式</text>
+  </g>
+  <g stroke="#475569" stroke-width="2" fill="none" marker-end="url(#a)">
+    <line x1="120" y1="140" x2="168" y2="140"/>
+    <line x1="320" y1="140" x2="368" y2="140"/>
+    <line x1="520" y1="140" x2="568" y2="140"/>
+    <line x1="720" y1="140" x2="768" y2="140"/>
+  </g>
+  <g stroke="#0f766e" stroke-width="2" fill="none" stroke-dasharray="6 4" marker-end="url(#b)">
+    <line x1="768" y1="180" x2="722" y2="180"/>
+    <line x1="568" y1="180" x2="522" y2="180"/>
+    <line x1="368" y1="180" x2="322" y2="180"/>
+    <line x1="168" y1="180" x2="122" y2="180"/>
+  </g>
+  <g font-size="14" fill="#475569" text-anchor="middle">
+    <text x="395" y="262">請求：依安裝先後，由左到右</text>
+    <text x="395" y="288" fill="#0f766e">回應：由右到左，原路出去</text>
+  </g>
+  <text x="245" y="330" text-anchor="middle" font-size="14" fill="#b45309">排在最前面的 Plugin，才量得到整條管線的耗時</text>
+  <line x1="245" y1="300" x2="245" y2="216" stroke="#b45309" stroke-width="1.5" stroke-dasharray="3 3"/>
+</svg>

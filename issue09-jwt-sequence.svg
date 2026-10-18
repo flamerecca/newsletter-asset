@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" font-family="PingFang TC, Noto Sans CJK TC, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#475569"/></marker>
+    <marker id="r" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#b91c1c"/></marker>
+  </defs>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">JWT 認證流程：登入、帶 JWT 呼叫 API、通過或回 401</text>
+  <g font-size="16" font-weight="700" text-anchor="middle">
+    <rect x="130" y="56" width="140" height="40" rx="8" fill="#e2e8f0" stroke="#64748b"/><text x="200" y="82" fill="#0f172a">客戶端</text>
+    <rect x="630" y="56" width="140" height="40" rx="8" fill="#dbeafe" stroke="#2563eb"/><text x="700" y="82" fill="#0f172a">Ktor 伺服器</text>
+  </g>
+  <line x1="200" y1="96" x2="200" y2="540" stroke="#94a3b8" stroke-dasharray="5 4"/>
+  <line x1="700" y1="96" x2="700" y2="540" stroke="#94a3b8" stroke-dasharray="5 4"/>
+  <g font-size="14" fill="#0f172a" text-anchor="middle">
+    <line x1="200" y1="140" x2="698" y2="140" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <text x="450" y="130">① POST /login，帶帳號密碼</text>
+    <rect x="560" y="156" width="280" height="30" rx="6" fill="#fef3c7" stroke="#d97706"/>
+    <text x="700" y="176">確認帳密，簽發 JWT，含 userId 與到期時間</text>
+    <line x1="700" y1="226" x2="202" y2="226" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <text x="450" y="216">② 200，回傳 JWT</text>
+    <line x1="200" y1="286" x2="698" y2="286" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <text x="450" y="276">③ GET /me，Authorization: Bearer JWT</text>
+    <rect x="560" y="302" width="280" height="30" rx="6" fill="#fef3c7" stroke="#d97706"/>
+    <text x="700" y="322">authenticate 區塊驗證簽章與到期時間</text>
+  </g>
+  <rect x="40" y="350" width="820" height="180" rx="8" fill="none" stroke="#94a3b8"/>
+  <text x="52" y="370" font-size="13" font-weight="700" fill="#475569">依驗證結果分兩條路</text>
+  <g font-size="14" fill="#0f172a" text-anchor="middle">
+    <text x="450" y="406" fill="#15803d">驗證通過</text>
+    <line x1="700" y1="418" x2="202" y2="418" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <text x="450" y="436">④ 200，進入路由，從 call.principal 取得使用者</text>
+    <line x1="52" y1="458" x2="848" y2="458" stroke="#94a3b8" stroke-dasharray="4 3"/>
+    <text x="450" y="482" fill="#b91c1c">簽章錯誤或已過期</text>
+    <line x1="700" y1="494" x2="202" y2="494" stroke="#b91c1c" stroke-width="2" marker-end="url(#r)"/>
+    <text x="450" y="514" fill="#b91c1c">④' 401 Unauthorized，路由不會執行</text>
+  </g>
+</svg>
